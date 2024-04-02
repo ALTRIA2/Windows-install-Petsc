@@ -1,11 +1,17 @@
 <center><b>在Windows平台上安装运行petsc环境</b></center>
 
 #petsc官方Windows安装教程地址:https://petsc.org/release/install/windows/
+
 #petsc下载地址:https://www.mcs.anl.gov/petsc/mirror/release-snapshots/
+
 #Intel编译套件下载地址:https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html
+
 #VS2019在线下载地址(在这个页面看到的,下面三个链接直达):https://developerinsider.co/download-visual-studio-2019-web-installer-iso-community-professional-enterprise/
+
 #Visual Studio Community 2019在线安装下载地址: https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&ref=developerinsider.co
+
 #Visual Studio Professional 2019在线安装下载地址:https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16&ref=developerinsider.co
+
 #Visual Studio Enterprise 2019在线安装下载地址:https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16&ref=developerinsider.co
 
 
@@ -13,6 +19,7 @@
 
 # 2.安装intel oneAPI 2024基础套件，再安装HPC套件(如果没有检测到VS2019IDE,必须重装VS2019(或者Repair修复安装),检测到了才能安装Intel)
 	## 2.1设置Intel的环境变量,必须要,不然后面程序运行会报错或者运行没反应
+ 
 	#打开系统属性 -> 环境变量 -> 系统变量 -> PATH
 	#添加三个路径,置顶
 	C:\Program Files (x86)\Intel\oneAPI\mpi\2021.12\opt\mpi\libfabric\bin
@@ -66,8 +73,8 @@
 	
 	
 	## 6.3输入下面的示例代码进行编译测试(能输出结果就是可以了)
+ 
 ```cpp
-
 static char help[] = "Solves a linear system in parallel with KSP.\n\n";
 
 /*T
