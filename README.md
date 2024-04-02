@@ -1,4 +1,4 @@
-<center><b>在Windows平台上安装运行petsc环境</b></center>
+# <center><b>在Windows平台上安装运行petsc环境</b></center>
 
 #petsc官方Windows安装教程地址:https://petsc.org/release/install/windows/
 
